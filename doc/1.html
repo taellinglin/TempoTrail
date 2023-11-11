@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Trail</title>
+    <style>
+         @font-face {
+            font-family: 'ZCOOLXiaoWei';
+            src: url('./ZCOOLXiaoWei-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'ZCOOLXiaoWei', Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #FFB6C1; /* Light Pink */
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #87CEEB; /* Sky Blue */
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .interaction {
+            color: #FFD700; /* Light Gold */
+        }
+
+        .platformer {
+            color: #FF6347; /* Tomato */
+        }
+
+        .combat {
+            color: #8A2BE2; /* Blue Violet */
+        }
+
+        .health {
+            color: #00FA9A; /* Medium Spring Green */
+        }
+
+        .quest {
+            color: #4169E1; /* Royal Blue */
+        }
+
+        .progression {
+            color: #FF1493; /* Deep Pink */
+        }
+
+        .integration {
+            color: #FFD700; /* Light Gold */
+        }
+
+        .style {
+            color: #FF6347; /* Tomato */
+        }
+
+        .conclusion {
+            color: #8A2BE2; /* Blue Violet */
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .chinese-content,
+        .japanese-content,
+        .korean-content {
+            display: none;
+        }
+
+        .language-button {
+            background-color: #4169E1; /* Royal Blue */
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        /* Hide non-English content by default */
+        .chinese-content, .japanese-content, .korean-content {
+            display: none;
+        }
+           /* Pastel button styles */
+    button.english {
+        background-color: #FFB6C1; /* Light Pink */
+    }
+
+    button.chinese {
+        background-color: #87CEEB; /* Sky Blue */
+    }
+
+    button.japanese {
+        background-color: #FFD700; /* Light Gold */
+    }
+
+    button.korean {
+        background-color: #00FA9A; /* Medium Spring Green */
+    }
+
+    button {
+        border: none;
+        color: #000;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #FF1493; /* Deep Pink */
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="english" onclick="showContent('english')">English</button>
+        <button class="chinese" onclick="showContent('chinese')">中文</button>
+        <button class="japanese" onclick="showContent('japanese')">日本語</button>
+        <button class="korean" onclick="showContent('korean')">한국어</button>
+    </div>
+
+    <h1 class="english-content">Title: Tempo Trail</h1>
+
+    <h2 class="english-content">Genre: VR RPG Platformer</h2>
+
+    <h2 class="english-content">Overview:</h2>
+    <p class="english-content">Tempo Trail is an enchanting virtual reality game that seamlessly combines elements of RPG and platformer genres. Immerse yourself in the cosmic concert disrupted by the unplugging of the sound system. As the chosen player, known as Ling Lin, embark on a journey through diverse realms, from the holographic Heaven to the earthly landscapes of wood and stone. Your mission is to retrieve scattered musical components, restore harmony, and continue the concert while battling demons through the power of music.</p>
+
+    <h2 class="english-content">Gameplay Mechanics:</h2>
+
+    <ol class="english-content">
+        <li class="interaction english-content">
+            <h3 class="english-content">VR Interaction:</h3>
+            <ul class="english-content">
+                <li class="english-content">Utilize VR controllers for immersive interaction with the environment, objects, and enemies.</li>
+                <li class="english-content">Incorporate hand gestures for casting spells or conducting musical elements.</li>
+            </ul>
+        </li>
+        <li class="platformer english-content">
+            <h3 class="english-content">Platformer Elements:</h3>
+            <ul class="english-content">
+                <li class="english-content">Navigate visually stunning levels inspired by Heaven and Earth, encountering platforming challenges, puzzles, and obstacles.</li>
+                <li class="english-content">Engage in both physical and mental challenges that require strategic thinking and precision.</li>
+            </ul>
+        </li>
+        <li class="combat english-content">
+            <h3 class="english-content">Combat System:</h3>
+            <ul class="english-content">
+                <li class="english-content">Engage in rhythmic combat with demons, utilizing the power of music to defeat them.</li>
+                <li class="english-content">Unlock musical abilities and spells as you progress, enhancing your combat repertoire.</li>
+            </ul>
+        </li>
+        <li class="health english-content">
+            <h3 class="english-content">Health and Environment Interaction:</h3>
+            <ul class="english-content">
+                <li class="english-content">The environment reflects the player's health status, transitioning between holographic brilliance and dullness.</li>
+                <li class="english-content">Touching objects in levels emits light and sound, providing clues and enhancing the immersive experience.</li>
+            </ul>
+        </li>
+        <li class="quest english-content">
+            <h3 class="english-content">Quest System:</h3>
+            <ul class="english-content">
+                <li class="english-content">Receive quests from God and Lucifer to retrieve specific musical components scattered across realms.</li>
+                <li class="english-content">Each realm presents unique challenges, enemies, and musical puzzles.</li>
+            </ul>
+        </li>
+        <li class="progression english-content">
+            <h3 class="english-content">Character Progression:</h3>
+            <ul class="english-content">
+                <li class="english-content">Gain experience points by completing quests, defeating enemies, and solving puzzles.</li>
+                <li class="english-content">Unlock new abilities and improve existing ones to tailor your playstyle.</li>
+            </ul>
+        </li>
+        <li class="integration english-content">
+            <h3 class="english-content">Music Integration:</h3>
+            <ul class="english-content">
+                <li class="english-content">Enjoy a dynamic and adaptive soundtrack that evolves based on player actions and the game's narrative.</li>
+                <li class="english-content">Solve musical puzzles to unlock powerful buffs and effects.</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <h2 class="english-content">Visual Style:</h2>
+    <p class="style english-content">Tempo Trail showcases a captivating visual style, featuring a vibrant and contrasting aesthetic. Heaven is depicted with futuristic and holographic elements, while Earth embraces organic, earthly visuals. The transition between realms is seamless, providing a visually striking experience.</p>
+    
+    <h2 class="english-content">Conclusion:</h2>
+    <p class="conclusion english-content">Tempo Trail invites players to embark on a mesmerizing VR journey that seamlessly blends RPG storytelling, platformer challenges, and the enchanting power of music. As Ling Lin, you hold the key to restoring harmony and saving the celestial concert from the clutches of chaos. Dive into the rhythmic adventure and let the tempo guide you through the magical Tempo Trail.</p>
+    
+
+    <h1 class="chinese-content">标题：音乐之旅</h1>
+
+<h2 class="chinese-content">类型：VR RPG 平台游戏</h2>
+
+    <h2 class="chinese-content">概览：</h2>
+    <p class="chinese-content">《音乐之旅》是一款迷人的虚拟现实游戏，无缝融合了角色扮演游戏和平台游戏的元素。沉浸在宇宙音乐会中，由于音响系统被拔掉而被打断。作为被选中的玩家，即灵林，踏上一场穿越多样领域的旅程，从全息的天堂到木头和石头的尘世景观。你的任务是检索散落的音乐元素，恢复和谐，并在通过音乐战胜恶魔的过程中继续音乐会。</p>
+
+    <h2 class="chinese-content">游戏机制：</h2>
+
+    <ol class="chinese-content">
+        <li class="interaction chinese-content">
+            <h3 class="chinese-content">虚拟现实交互：</h3>
+            <ul class="chinese-content">
+                <li class="chinese-content">利用虚拟现实控制器，沉浸式地与环境、物体和敌人进行交互。</li>
+                <li class="chinese-content">融入手势，施放法术或进行音乐元素的指挥。</li>
+            </ul>
+        </li>
+        <li class="platformer chinese-content">
+            <h3 class="chinese-content">平台游戏元素：</h3>
+            <ul class="chinese-content">
+                <li class="chinese-content">在天堂和地球启发的视觉引人注目的关卡中导航，面对平台挑战、谜题和障碍。</li>
+                <li class="chinese-content">参与既需要身体又需要头脑的挑战，需要战略思考和精准操作。</li>
+            </ul>
+        </li>
+        <li class="combat chinese-content">
+            <h3 class="chinese-content">战斗系统：</h3>
+            <ul class="chinese-content">
+                <li class="chinese-content">与恶魔进行有节奏的战斗，利用音乐的力量来击败它们。</li>
+                <li class="chinese-content">随着游戏进展，解锁音乐能力和法术，丰富你的战斗技能。</li>
+            </ul>
+        </li>
+        <li class="health chinese-content">
+            <h3 class="chinese-content">健康与环境交互：</h3>
+            <ul class="chinese-content">
+                <li class="chinese-content">环境反映玩家的健康状况，过渡在全息的光辉和暗淡之间。</li>
+                <li class="chinese-content">在关卡中触摸物体会发光发声，提供线索，增强沉浸体验。</li>
+            </ul>
+        </li>
+        <li class="quest chinese-content">
+            <h3 class="chinese-content">任务系统：</h3>
+            <ul class="chinese-content">
+                <li class="chinese-content">从上帝和魔鬼那里接收任务，去收集散落在各个领域的特定音乐元素。</li>
+                <li class="chinese-content">每个领域都呈现独特的挑战、敌人和音乐谜题。</li>
+            </ul>
+        </li>
+        <li class="progression chinese-content">
+            <h3 class="chinese-content">角色发展：</h3>
+            <ul class="chinese-content">
+                <li class="chinese-content">通过完成任务、打败敌人和解决谜题获得经验点。</li>
+                <li class="chinese-content">解锁新技能并改进现有技能，打造符合你风格的玩法。</li>
+            </ul>
+        </li>
+        <li class="integration chinese-content">
+            <h3 class="chinese-content">音乐融合：</h3>
+            <ul class="chinese-content">
+                <li class="chinese-content">享受根据玩家操作和游戏叙述演变的动态自适应声音轨。</li>
+                <li class="chinese-content">解决音乐谜题，解锁强大的增益效果。</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <h2 class="chinese-content">视觉风格：</h2>
+    <p class="style chinese-content">《音乐之旅》展示了引人入胜的视觉风格，呈现出鲜明而对比鲜明的美学。天堂以未来感和全息元素为特色，而地球则拥抱有机、朴实的视觉效果。领域间的过渡是无缝的，提供了引人注目的视觉体验。</p>
+    
+    <h2 class="chinese-content">结论：</h2>
+    <p class="conclusion chinese-content">《音乐之旅》邀请玩家踏上一场迷人的虚拟现实之旅，无缝融合了角色扮演游戏叙事、平台游戏挑战和音乐的迷人力量。作为灵林，你拥有恢复和谐、拯救天空音乐会免受混乱之苦的关键。投身于这段有节奏的冒险，让音乐引导你穿越神奇的音乐之旅。</p>
+    
+
+
+    <h1 class="japanese-content">タイトル：テンポ・トレイル</h1>
+
+<h2 class="japanese-content">ジャンル：VR RPG プラットフォーマー</h2>
+
+    <h2 class="japanese-content">概要：</h2>
+    <p class="japanese-content">テンポ・トレイルは魅惑的な仮想現実ゲームであり、RPGとプラットフォーマージャンルの要素をシームレスに組み合わせています。サウンドシステムのプラグを抜かれたことで混乱した宇宙のコンサートに没入してください。リンーリンとして知られる選ばれたプレイヤーとして、ホログラフィックな天国から木と石の地球的な風景まで、さまざまな領域を旅してください。あなたの使命は、散らばった音楽の要素を回収し、調和を取り戻し、音楽の力を使って悪魔との戦いを続けながらコンサートを続けることです。</p>
+
+    <h2 class="japanese-content">ゲームプレイメカニクス:</h2>
+
+<ol class="japanese-content">
+    <li class="interaction japanese-content">
+        <h3 class="japanese-content">VR インタラクション:</h3>
+        <ul class="japanese-content">
+            <li class="japanese-content">環境、オブジェクト、および敵との没入型インタラクションにVRコントローラーを利用します。</li>
+            <li class="japanese-content">呪文のキャスティングや音楽要素の指揮に手のジェスチャーを取り入れます。</li>
+        </ul>
+    </li>
+    <li class="platformer japanese-content">
+        <h3 class="japanese-content">プラットフォーマー要素:</h3>
+        <ul class="japanese-content">
+            <li class="japanese-content">天国と地球にインスパイアされた視覚的に見事なレベルをナビゲートし、プラットフォームの課題、パズル、および障害に遭遇します。</li>
+            <li class="japanese-content">戦略的思考と正確さが必要な物理的および精神的な課題に参加します。</li>
+        </ul>
+    </li>
+    <li class="combat japanese-content">
+        <h3 class="japanese-content">戦闘システム:</h3>
+        <ul class="japanese-content">
+            <li class="japanese-content">音楽の力を活用して悪魔とのリズミカルな戦闘に参加します。</li>
+            <li class="japanese-content">進行するにつれて音楽の能力と呪文をアンロックして、戦闘のレパートリーを向上させます。</li>
+        </ul>
+    </li>
+    <li class="health japanese-content">
+        <h3 class="japanese-content">健康と環境の相互作用:</h3>
+        <ul class="japanese-content">
+            <li class="japanese-content">環境はプレイヤーの健康状態を反映し、ホログラフィックな輝きと鈍さの間を移行します。</li>
+            <li class="japanese-content">レベルで物に触れると、光と音が発生し、手がかりを提供し、没入感を高めます。</li>
+        </ul>
+    </li>
+    <li class="quest japanese-content">
+        <h3 class="japanese-content">クエストシステム:</h3>
+        <ul class="japanese-content">
+            <li class="japanese-content">神とルシファーから、領域に散らばった特定の音楽コンポーネントを回収するためのクエストを受けます。</li>
+            <li class="japanese-content">各領域には固有の課題、敵、および音楽のパズルがあります。</li>
+        </ul>
+    </li>
+    <li class="progression japanese-content">
+        <h3 class="japanese-content">キャラクターの進化:</h3>
+        <ul class="japanese-content">
+            <li class="japanese-content">クエストを完了し、敵を倒し、パズルを解決することで経験ポイントを獲得します。</li>
+            <li class="japanese-content">新しい能力をアンロックし、既存の能力を向上させて、プレイスタイルをカスタマイズします。</li>
+        </ul>
+    </li>
+    <li class="integration japanese-content">
+        <h3 class="japanese-content">音楽の統合:</h3>
+        <ul class="japanese-content">
+            <li class="japanese-content">プレイヤーのアクションとゲームの物語に基づいて進化するダイナミックで適応型のサウンドトラックを楽しんでください。</li>
+            <li class="japanese-content">強力なバフとエフェクトをアンロックするために音楽のパズルを解決します。</li>
+        </ul>
+    </li>
+</ol>
+
+<h2 class="japanese-content">ビジュアルスタイル:</h2>
+<p class="style japanese-content">『テンポ・トレイル』は魅力的なビジュアルスタイルを披露し、鮮やかで対照的な美学を特徴としています。天国は未来的でホログラフィックな要素で描かれており、地球は有機的で地球的な視覚効果を受け入れています。領域間の移行はシームレスで、視覚的に印象的な体験を提供します。</p>
+
+<h2 class="japanese-content">結論:</h2>
+<p class="conclusion japanese-content">『テンポ・トレイル』は、RPGのストーリーテリング、プラットフォーマーの課題、音楽の魅力的な力をシームレスに組み合わせた魅力的なVRの冒険にプレイヤーを招待します。リンーリンとして、あなたは調和を取り戻し、混沌の手から天上のコンサートを救う鍵を握っています。リズミカルな冒険に飛び込んで、テンポが『Tempo Trail』を通してあなたを導くのを許してください。</p>
+
+
+
+
+<h1 class="korean-content">제목: 템포 트레일</h1>
+
+<h2 class="korean-content">장르: VR RPG 플랫포머</h2>
+
+
+<h2 class="korean-content">개요:</h2>
+<p class="korean-content">템포 트레일은 RPG와 플랫포머 장르의 요소를 매끄럽게 결합한 매혹적인 가상 현실 게임입니다. 사운드 시스템이 해제되어 우주의 콘서트가 혼란스러워지는 것에 몰입하세요. 린린으로 알려진 선택받은 플레이어로서 홀로그래픽 천국부터 나무와 돌의 대지까지 다양한 영역을 여행합니다. 여러분의 임무는 흩어진 음악 구성품을 회수하고 조화를 회복하며 음악의 힘으로 악마와의 전투를 이어가면서 콘서트를 계속하는 것입니다.</p>
+
+<h2 class="korean-content">게임 플레이 메카닉스:</h2>
+
+<ol class="korean-content">
+    <li class="interaction korean-content">
+        <h3 class="korean-content">VR 상호 작용:</h3>
+        <ul class="korean-content">
+            <li class="korean-content">환경, 물체 및 적과의 몰입형 상호 작용에 VR 컨트롤러를 활용합니다.</li>
+            <li class="korean-content">주문을 시전하거나 음악 요소를 지휘하기 위해 손 제스처를 통합합니다.</li>
+        </ul>
+    </li>
+    <li class="platformer korean-content">
+        <h3 class="korean-content">플랫포머 요소:</h3>
+        <ul class="korean-content">
+            <li class="korean-content">천국과 땅에서 영감을 받은 시각적으로 멋진 레벨을 탐험하면서 플랫포밍 도전, 퍼즐 및 장애물을 마주합니다.</li>
+            <li class="korean-content">전략적 사고와 정확성이 필요한 물리적 및 정신적 도전에 참여합니다.</li>
+        </ul>
+    </li>
+    <li class="combat korean-content">
+        <h3 class="korean-content">전투 시스템:</h3>
+        <ul class="korean-content">
+            <li class="korean-content">음악의 힘을 이용하여 악마와의 리듬 전투에 참여합니다.</li>
+            <li class="korean-content">진행함에 따라 음악 능력과 주문을 언락하여 전투 레퍼토리를 향상시킵니다.</li>
+        </ul>
+    </li>
+    <li class="health korean-content">
+        <h3 class="korean-content">건강 및 환경 상호 작용:</h3>
+        <ul class="korean-content">
+            <li class="korean-content">환경은 플레이어의 건강 상태를 반영하며 홀로그래픽 번영과 둔화 사이를 전환합니다.</li>
+            <li class="korean-content">레벨에서 물체를 만지면 빛과 소리가 발생하여 단서를 제공하고 몰입 경험을 향상시킵니다.</li>
+        </ul>
+    </li>
+    <li class="quest korean-content">
+        <h3 class="korean-content">퀘스트 시스템:</h3>
+        <ul class="korean-content">
+            <li class="korean-content">하느님과 루시퍼로부터 특정 음악 구성 요소를 회수하기 위한 퀘스트를 받습니다.</li>
+            <li class="korean-content">각 영역은 고유한 도전, 적 및 음악 퍼즐을 제시합니다.</li>
+        </ul>
+    </li>
+    <li class="progression korean-content">
+        <h3 class="korean-content">캐릭터 진화:</h3>
+        <ul class="korean-content">
+            <li class="korean-content">퀘스트 완료, 적 처치 및 퍼즐 해결로 경험 포인트를 획득합니다.</li>
+            <li class="korean-content">새로운 능력을 언락하고 기존 능력을 향상시켜 플레이 스타일을 맞춤화합니다.</li>
+        </ul>
+    </li>
+    <li class="integration korean-content">
+        <h3 class="korean-content">음악 통합:</h3>
+        <ul class="korean-content">
+            <li class="korean-content">플레이어의 행동과 게임 내러티브를 기반으로 변화하는 다이내믹하고 적응형 사운드 트랙을 즐깁니다.</li>
+            <li class="korean-content">강력한 버프와 효과를 언락하기 위해 음악 퍼즐을 해결합니다.</li>
+        </ul>
+    </li>
+</ol>
+
+<h2 class="korean-content">시각적 스타일:</h2>
+<p class="style korean-content">템포 트레일은 매혹적인 시각적 스타일을 선보이며 생동감 있고 대조적인 미학을 특징으로 합니다. 천국은 미래적이고 홀로그래픽인 요소로 묘사되었으며 땅은 유기적이고 흙빛 시각적 요소를 받아들입니다. 영역 간의 전환은 시각적으로 인상적인 경험을 제공합니다.</p>
+
+<h2 class="korean-content">결론:</h2>
+<p class="conclusion korean-content">템포 트레일은 RPG 스토리텔링, 플랫포머 도전과 음악의 마력을 효과적으로 결합한 매혹적인 VR 여행을 제안합니다. 린린으로서 여러분은 조화를 복원하고 신성한 콘서트를 혼돈의 손에서 구해내는 열쇠를 쥐고 있습니다. 리듬에 맞춰 이 마법적인 Tempo Trail을 통해 안내받아 여행을 떠나보세요.</p>
+
+
+
+
+<script>
+    function showContent(language) {
+        // Hide all content sections
+        document.querySelectorAll('.english-content, .chinese-content, .japanese-content, .korean-content').forEach(function (el) {
+            el.style.display = 'none';
+        });
+
+        // Show the selected language content
+        document.querySelectorAll('.' + language + '-content').forEach(function (el) {
+            el.style.display = 'block';
+        });
+    }
+</script>
+
+</body>
+
+</html>
